@@ -14,7 +14,7 @@ import javax.security.auth.login.LoginException;
 public class DiscordBot extends ListenerAdapter {
 
     public static void main(String[] args) throws LoginException {
-        JDA bot = JDABuilder.createDefault("MTIzOTU1ODQ0MzAwMjQ5NTA2MA.GH37hr.ovEMgct8HdGgU9icyu8794EGjsJKaXd-jsSJdA")
+        JDA bot = JDABuilder.createDefault("") // user your bot token. check other files to change channel id and role id
                 .setActivity(Activity.listening("yappin"))
                 .addEventListeners(new DiscordBot())
                 .build();
